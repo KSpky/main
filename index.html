@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-compatible" content = "IE=edge">
+        <meta name = "viewport" content = "initial-scale=1.0,width=device-width">
+        <link rel="icon" type="image/png" sizes="16x16"  href="./image/coding.png">
+        <meta name="msapplication-TileColor" content="#FF3300">
+        <meta name="theme-color" content="brown">
+        <link rel="stylesheet" type = "text/css" href ="./header.css">
+        <link rel="stylesheet" type = "text/css" href ="./main.css">
+        <link rel="stylesheet" type = "text/css" href ="./footer.css">
+        <link rel="stylesheet" type = "text/css" href ="./sidemenu.css">
+        <script src = "./jquery.js"></script>
+        <script src = "./main.js?v=13"></script>
+        <title>메인 포트폴리오</title>
+    </head>
+    <body>
+        <!-- 사이드 메뉴 바 시작 -->
+        <aside>
+            <ul class = "sidemenu">
+                <li><a href = "#header">Main</a></li>
+                <li><a href = "#profile">Profile</a></li>
+                <li><a href = "#skill">Skill</a></li>
+                <li><a href = "#aboutme">About Me</a></li>
+                <li><a href = "#footer">End</a></li>
+            </ul>
+        </aside>
+        <!-- 사이드 메뉴 바 끝 -->
+        <!-- 인사말 시작-->
+        <header id = "header">
+            <div class = "whiteboard">
+                <img src = "./image/maintitle.jpg" alt = "mainimage">
+                <article class = "header_animation">
+                    <h1>Welcome to Young's Portfolio</h1>
+                    <p class = "main_p_1"><b>안녕하세요<br>꿈과 미래를 코딩하는<br>웹 퍼블리셔 박기영입니다.</b></p>
+                    <p class = "main_p_2"><u><b>아래로 스크롤 해보세요!</b></u></p>
+                    <img src = "./image/down-arrow.gif" alt = "downscroll">
+                </article>
+            </div>
+        </header>
+        <!-- 인사말 끝 -->
+        <!-- 프로필 시작 -->
+        <main>
+            <section id = "profile" aria-label="프로필">
+                <div class = "profile_left">
+                    <div class = "profile_picture"><img src = "./image/profile.png" alt = "profileimage"></div>
+                    <ul class = "profile_text">
+                        <li><img src = "./image/name.png" alt = "nameimage"><p>이름: 박기영(Park Ki Young)</p></li>
+                        <li><img src = "./image/date.png" alt = "dateimage"><p>생년월일: 97.06.16</p></li>
+                        <li><img src = "./image/mail.png" alt = "mailimage"><p>이메일: pky970616@naver.com</p></li>
+                        <li><img src = "./image/location.png" alt = "locationimage"><p>거주지: 경기도 의정부시</p></li>
+                    </ul>
+                </div>
+                <div class = "profile_right">
+                    <ul>
+                        <li><img src = "./image/career.gif" alt = "careericon"><p>경력</p></li>
+                        <li>&nbsp;&nbsp;&nbsp;- 콩스디자인: 20.09 ~ 21.04</li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li><img src = "./image/curriculum.gif" alt = "curriculumicon"><p>교육과정</p></li>
+                        <li>&nbsp;&nbsp;&nbsp;- 네트워크 엔지니어 실무자 양성: 17.01 ~ 17.05</li>
+                        <li>&nbsp;&nbsp;&nbsp;- 웹퍼블리셔 프론트엔드 개발 디지털실무 양성과정: 21.08 ~ 22.03</li>
+                    </ul>
+                    <ul>
+                        <li><img src = "./image/license.gif" alt = "licenseicon"><p>자격증</p></li>
+                        <li>&nbsp;&nbsp;&nbsp;- 네트워크 관리사 2급: 22.05</li>
+                        <li>&nbsp;&nbsp;&nbsp;- 웹 디자인 기능사(필기): 21.05</li>
+                        <li>&nbsp;&nbsp;&nbsp;- 운전면허 2종 보통(필기): 21.06</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- 프로필 끝 -->
+            <!-- 스킬 시작 -->
+            <section id = "skill" aria-label="기술">
+                <div class ="skill_view">
+                    <ul class ="skill_list">
+                        <li class="skill1"><p>HTML</p><canvas></canvas><img src = "./image/html_logo.png" alt = "html_logoicon"><div><span class = "skillani1"></span><p>90%</p></div></li>
+                        <li class="skill2"><p>CSS</p><canvas></canvas><img src = "./image/css_logo.png" alt = "css_logoicon"><div><span class = "skillani1"></span><p>90%</p></div></li>
+                        <li class="skill3"><p>Javascript</p><canvas></canvas><img src = "./image/javascript_logo.png" alt = "javascript_logoicon"><div><span class = "skillani2"></span><p>80%</p></div></li>
+                        <li class="skill4"><p>Jquery</p><canvas></canvas><img src = "./image/jquery_logo.png" alt = "jquery_logoicon"><div><span class = "skillani2"></span><p>80%</p></div></li>
+                        <li class="skill5"><p>Photoshop</p><canvas></canvas><img src = "./image/Photoshop_logo.png" alt = "Photoshop_logoicon"><div><span class = "skillani3"></span><p>60%</p></div></li>
+                        <li class="skill6"><p>SASS</p><canvas></canvas><img src = "./image/Sass_logo.png" alt = "Sass_logoicon"><div><span class = "skillani2"></span><p>80%</p></div></li>
+                        <li class="skill7"><p>Bootstrap</p><canvas></canvas><img src= "./image/Bootstrap_logo.png" alt = "Bootstrap_logoicon"><div><span class = "skillani2"></span><p>80%</p></div></li>
+                        <li class="skill8"><p>Three</p><canvas></canvas><img src= "./image/Three.js_Icon.svg" alt = "Threejsicon"><div><span class = "skillani3"></span><p>60%</p></div></li>
+                    </ul>
+            </div>
+            </section>
+            <section id = "aboutme" aria-label="나에 대해">
+                <ul class = "aboutme_list">
+                    <li class = "aboutme"><h1>01</h1><img src = "./image/aboutme01.png" alt = "aboutmeicon1"><h2>배우는 걸 좋아합니다</h2><div>새로운 무언가를 배울때 두렵거나 무섭기보다는 새로운걸 알아간다는 즐거움을 느낍니다.<br>매년 새로운 기술이 나오는 만큼 현재 내가 알고 있는 것만 가지고 자만하지 않고 항상 공부하고 배워야하는 마음가짐을 가지고 있습니다.</div></li>
+                    <li class = "aboutme"><h1>02</h1><img src = "./image/aboutme02.png" alt = "aboutmeicon2"><h2>소통을 중요시 여깁니다</h2><div>프로젝트를 하다보면 아무리 능력이 좋은 한사람이 모든걸 해결할 수는 없습니다.<br>반드시 팀원들이 필요합니다. 그리고 이런 팀원들 모두 각 개인 마다 성격,잘하는 파트, 못하는 파트 등 저마다의 차이가 있을 것이고 이러한 차이점들을 소통해나가며 조율하는 것이 프로젝트를 할 때 가장 중요하다고 생각합니다.</div></li>
+                    <li class = "aboutme"><h1>03</h1><img src = "./image/aboutme03.png" alt = "aboutmeicon3"><h2>웹 표준형을 준수합니다</h2><div>잘 만들어진 사이트라고 해도 표준형이 아니면 사용자마다 사용하는 운영체제,브라우저에 따라 다른 결과가 나올 수 있으므로 웹 표준형은 웹 사이트를 만들 때 반드시 지켜야합니다.</div></li>
+                </ul>
+            </section>
+        </main>
+        <footer id = "footer">
+            <div class = "coverboard"></div>
+            <ul class = "contact_text">
+                <li class = "contact_title">Thank you for Watching</li>
+                <li>부족한 부분이 많지만 끝까지 봐주셔서 감사합니다!</li>
+                <li>항상 발전하고 전진하겠습니다!</li>
+                <li>저에 대한 궁금한점 있으시면 연락 주시기 바랍니다 :)</li>
+            </ul>
+            <ul class = "contact_icon">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </footer>
+    </body>
+</html>

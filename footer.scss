@@ -1,0 +1,76 @@
+@charset "utf-8";
+@import "./default.scss";
+
+footer{
+    width:100vw;
+    height:100vh;
+    color:black;
+    position: relative;
+    background-image: url("./image/contact.jpg");
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+.coverboard{
+    width:100%;
+    height:100%;
+    background-color: white;
+    opacity: 0.5;
+    position: absolute;
+}
+.contact_text{
+    position: absolute;
+    width:80%;
+    height:50%;
+    @include absolute_posiotion(10%,0,"",0);
+    margin:auto;
+    text-align: center;
+    display: flex;
+    opacity: 0;
+    @include object-flex(column,nowrap,space-between,center);
+    & > li{
+        font-size: 2vw;
+        font-family: 'Noto Sans KR', sans-serif;
+        font-weight: 500;
+    }
+}
+.footer_animation{
+    animation: 2s linear fadein;
+    animation-fill-mode: forwards;
+}
+.contact_title{
+    font-family: 'Lobster', cursive !important;
+    font-size: 5vw !important;
+    text-shadow: 10px 10px 10px gray;
+    font-weight: 900!important;
+}
+
+
+
+@media (min-width:360px) and (max-width:1000px){
+    .contact_text{
+        & > li{
+            font-size: 5vw;
+        }
+    }
+    .contact_title{
+        font-size: 14vw !important;
+    }
+    footer{
+        background-position-x:40%;
+    }
+}
+
+
+
+/* animation */
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        filter:blur(14px);
+    }
+    100%{
+        opacity: 1;
+        filter:blur(0px);
+    }
+ }

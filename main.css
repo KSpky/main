@@ -1,0 +1,734 @@
+@charset "UTF-8";
+/* 폰트 */
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+h1, p, h2 {
+  margin: 0;
+}
+
+a, ul, ol, pre, span {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  /* 프로필 시작 */
+  /* 프로필 끝 */
+  /* 스킬 시작 */
+  /*
+    for를 사용하는 방법은 to와 through가 있는데 둘의 차이는 from 1 to 3은 1~2
+    through 1 to 3은 1~3을 나타낸다. 즉 to(미만)through(이하)이렇게 생각하면 편하다.
+    }*/
+  /* 스킬 끝 */
+  /* 나에 대해 시작 */
+}
+
+main > section:nth-of-type(1) {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: antiquewhite;
+}
+
+main > section:nth-of-type(1) > .profile_left {
+  width: 40%;
+  height: 85%;
+  position: absolute;
+  top: 5%;
+  right: "";
+  bottom: "";
+  left: 10%;
+}
+
+main > section:nth-of-type(1) > .profile_left > .profile_picture {
+  width: 40%;
+  height: 40%;
+  background-color: rgba(211, 211, 211, 0.3);
+  border-radius: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 5%;
+  right: 0;
+  bottom: "";
+  left: 0;
+  margin: auto;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
+}
+
+main > section:nth-of-type(1) > .profile_left > .profile_picture > img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main > section:nth-of-type(1) > .profile_left > .profile_text {
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top: "";
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+main > section:nth-of-type(1) > .profile_left > .profile_text > li {
+  width: 100%;
+  height: 25%;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > section:nth-of-type(1) > .profile_left > .profile_text > li > img {
+  width: 10%;
+  height: 50%;
+}
+
+main > section:nth-of-type(1) > .profile_left > .profile_text > li > p {
+  margin-left: 10%;
+}
+
+main > section:nth-of-type(1) > .profile_right {
+  width: 40%;
+  height: 80%;
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  bottom: "";
+  left: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > section:nth-of-type(1) > .profile_right > ul {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  border: 1px solid lightgray;
+  -webkit-box-shadow: 1px 1px 10px black;
+          box-shadow: 1px 1px 10px black;
+}
+
+main > section:nth-of-type(1) > .profile_right > ul > li {
+  width: inherit;
+  height: 30%;
+  font-size: 1vw;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+main > section:nth-of-type(1) > .profile_right > ul > li > img {
+  width: 10%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  padding-right: 0.5vw;
+  padding-left: 0.5vw;
+}
+
+main > section:nth-of-type(1) > .profile_right > ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > section:nth-of-type(1) > .profile_right > ul > li > p {
+  font-weight: 700;
+  font-size: 1.5vw;
+}
+
+main > section:nth-of-type(2) {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+main > section:nth-of-type(2) > .skill_view {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list {
+  width: 80%;
+  height: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li {
+  width: 21%;
+  height: 45%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 1vw;
+  background-color: rgba(211, 211, 211, 0.7);
+  -webkit-box-shadow: 3px 3px 10px gray;
+          box-shadow: 3px 3px 10px gray;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > img {
+  width: 50%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-filter: drop-shadow(5px 5px 5px gray);
+          filter: drop-shadow(5px 5px 5px gray);
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > canvas {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  top: 20%;
+  border-radius: 1vw;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > div {
+  z-index: 10;
+  width: 90%;
+  height: 10%;
+  border-radius: 10vw;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > div > p {
+  font-size: 1.5vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  text-align: center;
+  z-index: 10;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > div > span {
+  height: 100%;
+  border-radius: 10vw;
+  position: absolute;
+  left: 0;
+  background-color: darkorange;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > div > .skillani1 {
+  -webkit-animation: 2s linear skill_ani1;
+          animation: 2s linear skill_ani1;
+  width: 90%;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > div > .skillani2 {
+  -webkit-animation: 2s linear skill_ani2;
+          animation: 2s linear skill_ani2;
+  width: 80%;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > div > .skillani3 {
+  -webkit-animation: 2s linear skill_ani3;
+          animation: 2s linear skill_ani3;
+  width: 60%;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li > p {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 1.5vw;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10vw;
+  width: 60%;
+  text-align: center;
+}
+
+main > section:nth-of-type(2) > .skill_view > .skill_list > li:nth-of-type(3) > img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+main > section:nth-of-type(3) {
+  background-color: rgba(0, 204, 255, 0.1);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+main > section:nth-of-type(3) > .aboutme_list {
+  width: 80%;
+  height: 90%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme {
+  width: 30%;
+  height: 100%;
+  opacity: 0;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme > h1 {
+  font-size: 4vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme > img {
+  width: 100%;
+  height: 40%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme > h2 {
+  padding-bottom: 5%;
+  font-size: 2vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme > div {
+  font-size: 1.2vw;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme_animation:nth-of-type(1) {
+  -webkit-animation: 2s linear fadein;
+          animation: 2s linear fadein;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme_animation:nth-of-type(2) {
+  -webkit-animation: 2s linear fadein;
+          animation: 2s linear fadein;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+main > section:nth-of-type(3) > .aboutme_list > .aboutme_animation:nth-of-type(3) {
+  -webkit-animation: 2s linear fadein;
+          animation: 2s linear fadein;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+/* 나에 대해 끝 */
+@media (min-width: 360px) and (max-width: 1000px) {
+  main {
+    /* 프로필 시작 */
+    /* 프로필 끝 */
+    /* 스킬 시작 */
+    /* 스킬 끝 */
+  }
+  main > section:nth-of-type(1) {
+    width: 100vw;
+    height: 200vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  main > section:nth-of-type(1) > .profile_left {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    position: relative;
+  }
+  main > section:nth-of-type(1) > .profile_left > .profile_picture {
+    width: 60%;
+    height: 30%;
+  }
+  main > section:nth-of-type(1) > .profile_left > .profile_text {
+    top: "";
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90%;
+  }
+  main > section:nth-of-type(1) > .profile_left > .profile_text > li {
+    height: 10%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main > section:nth-of-type(1) > .profile_left > .profile_text > li > img {
+    width: 20%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  main > section:nth-of-type(1) > .profile_left > .profile_text > li > p {
+    font-size: 4vw;
+  }
+  main > section:nth-of-type(1) > .profile_right {
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main > section:nth-of-type(1) > .profile_right > ul {
+    width: 90%;
+    height: 25%;
+  }
+  main > section:nth-of-type(1) > .profile_right > ul > li {
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 500;
+  }
+  main > section:nth-of-type(1) > .profile_right > ul > li > img {
+    width: 30%;
+  }
+  main > section:nth-of-type(1) > .profile_right > ul > li > p {
+    font-size: 5vw;
+  }
+  main > section:nth-of-type(2) > .skill_view > .skill_list {
+    height: 95%;
+  }
+  main > section:nth-of-type(2) > .skill_view > .skill_list > li {
+    width: 30%;
+    height: 30%;
+  }
+  main > section:nth-of-type(2) > .skill_view > .skill_list > li > p {
+    width: 85%;
+    height: 10%;
+    font-size: 3vw;
+  }
+  main > section:nth-of-type(2) > .skill_view > .skill_list > li > div > p {
+    font-size: 3vw;
+  }
+  main > section:nth-of-type(3) {
+    height: 200vh;
+  }
+  main > section:nth-of-type(3) > .aboutme_list {
+    height: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main > section:nth-of-type(3) > .aboutme_list > .aboutme {
+    width: 100%;
+    height: 30%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main > section:nth-of-type(3) > .aboutme_list > .aboutme > h1 {
+    font-size: 5vw;
+    text-align: center;
+  }
+  main > section:nth-of-type(3) > .aboutme_list > .aboutme > h2 {
+    text-align: center;
+    font-size: 4vw;
+    padding-bottom: 0;
+  }
+  main > section:nth-of-type(3) > .aboutme_list > .aboutme > div {
+    font-size: 2.5vw;
+  }
+}
+
+/* animation */
+@-webkit-keyframes skill_ani1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+@keyframes skill_ani1 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@-webkit-keyframes skill_ani2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes skill_ani2 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@-webkit-keyframes skill_ani3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes skill_ani3 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(14px);
+            filter: blur(14px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(14px);
+            filter: blur(14px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+}

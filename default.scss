@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+@mixin absolute_posiotion($top,$right,$bottom,$left){
+    top:$top;
+    right:$right;
+    bottom:$bottom;
+    left:$left;
+}
+@mixin object_flex($direction,$wrap,$content,$items){
+   flex-direction:$direction;
+   flex-wrap: $wrap;
+   justify-content:$content;
+   align-items: $items;
+}
+body{
+    margin:0;
+    padding:0;
+    overflow: hidden;
+ }
+ h1,p,h2{
+    margin:0;
+ }
+ a,ul,ol,pre,span{
+    list-style: none;
+    padding:0;
+    margin:0;
+    display: block;
+    text-decoration: none;
+    color:black;
+ }
+ 
+

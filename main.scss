@@ -1,0 +1,417 @@
+@charset "utf-8";
+@import "./default.scss";
+main{
+/* 프로필 시작 */
+    & > section:nth-of-type(1){
+        width:100vw;
+        height:100vh;
+        position: relative;
+        background-color: antiquewhite;
+        & > .profile_left{
+            width:40%;
+            height:85%;
+            position: absolute;
+            @include absolute_posiotion(5%,"","",10%);
+            & > .profile_picture{
+                width:40%;
+                height:40%;
+                background-color: rgba(211,211,211,0.3);
+                border-radius: 100%;
+                overflow: hidden;
+                position: absolute;
+                @include absolute_posiotion(5%,0,"",0);
+                margin: auto;
+                box-shadow: 5px 5px 20px black;
+                & > img{
+                    width:100%;
+                    height:100%;
+                    object-fit: contain;
+                }
+            }
+            & > .profile_text{
+                width:70%;
+                height:50%;
+                position: absolute;
+                @include absolute_posiotion("",0,0,0);
+                margin: auto;
+                & > li{
+                    width:100%;
+                    height:25%;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-size: 1.5vw;
+                    font-weight: 500;
+                    display: flex;
+                    @include object-flex(row,nowrap,flex-start,center);
+                    & > img{
+                        width:10%;
+                        height:50%;
+                    }
+                    & > p{
+                        margin-left:10%;
+                    }
+                }
+            }
+        }
+
+        & > .profile_right{
+            width:40%;
+            height:80%;
+            position: absolute;
+            @include absolute_posiotion(10%,5%,"","");
+            display: flex;
+            @include object_flex(column,nowrap,space-between,center);
+            & > ul{
+                width:100%;
+                height:30%;
+                display: flex;
+                @include object_flex(column,nowrap,space-between,flex-start);
+                background-color: rgba(255,255,255,0.8);
+                border-radius:10px;
+                border:1px solid rgba(211,211,211,1);
+                box-shadow: 1px 1px 10px black;
+                & > li{
+                    width:inherit;
+                    height: 30%;
+                    font-size: 1vw;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    & > img{
+                        width:10%;
+                        height: 100%;
+                        object-fit: contain;
+                        padding-right:0.5vw;
+                        padding-left:0.5vw;
+                    }
+                }
+                & > li{
+                    display:flex;
+                    @include object_flex(row,nowrap,flex-start,center);
+                    & > p{
+                        font-weight: 700;
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+        }
+    }
+/* 프로필 끝 */
+
+
+/* 스킬 시작 */
+    & > section:nth-of-type(2){
+        width:100vw;
+        height:100vh;
+        position: relative;
+        overflow: hidden;
+        & > .skill_view{
+            width:100%;
+            height:100%;
+            display: flex;
+            @include object-flex(row,nowrap,center,center);
+            position: absolute;
+            @include absolute_posiotion(0,0,0,0);
+            margin:auto;
+            & > .skill_list{
+                width:80%;
+                height:80%;
+                display: flex;
+                @include object-flex(row,wrap,space-between,center);
+                & > li{
+                    width:21%;
+                    height:45%;
+                    position: relative;
+                    display: flex;
+                    @include object-flex(column,nowrap,space-around,center);
+                    border-radius: 1vw;
+                    background-color: rgba(211,211,211,0.7);
+                    box-shadow: 3px 3px 10px gray;
+                    & > img{
+                        width:50%;
+                        height:50%;
+                        object-fit: contain;
+                        filter:drop-shadow(5px 5px 5px gray);
+                    }
+                    & > canvas{
+                        background-color: rgba(255,255,255,0.7);
+                        position: absolute;
+                        width:90%;
+                        height:60%;
+                        top:20%;
+                        border-radius: 1vw;
+                    }
+                    & > div{
+                        z-index: 10;
+                        width:90%;
+                        height: 10%;
+                        border-radius: 10vw;
+                        box-shadow: 5px 5px 10px black;
+                        position: relative;
+                        display: flex;
+                        @include object-flex(row,nowrap,center,center);
+                        & > p{ 
+                            font-size: 1.5vw;
+                            font-family: 'Noto Sans KR', sans-serif;
+                            font-weight: 600;
+                            text-align: center;
+                            z-index: 10;
+                        }
+                        & > span{
+                            height:100%;
+                            border-radius: 10vw;
+                            position: absolute;
+                            left:0;
+                            background-color:darkorange;
+                        }
+                        & > .skillani1{
+                            animation: 2s linear skill_ani1;
+                            width:90%;
+                        }
+                        & > .skillani2{
+                            animation: 2s linear skill_ani2;
+                            width:80%;
+                        }
+                        & > .skillani3{
+                            animation: 2s linear skill_ani3;
+                            width:60%;
+                        }
+                    }
+                    & > p{
+                        font-family: 'Noto Sans KR', sans-serif;
+                        font-weight: 700;
+                        font-size: 1.5vw;
+                        z-index:10;
+                        background-color: rgba(255,255,255,0.7);
+                        border-radius: 10vw;
+                        width:60%;
+                        text-align: center;
+                    }
+                }
+                & > li:nth-of-type(3){
+                    & > img {
+                        transform: scale(1.2);
+                    }
+                }
+                
+
+
+            }
+        }
+    }
+
+     /*
+    for를 사용하는 방법은 to와 through가 있는데 둘의 차이는 from 1 to 3은 1~2
+    through 1 to 3은 1~3을 나타낸다. 즉 to(미만)through(이하)이렇게 생각하면 편하다.
+    }*/
+/* 스킬 끝 */
+/* 나에 대해 시작 */
+    & > section:nth-of-type(3){
+        background-color:rgba(0,204,255,0.1);
+        width:100vw;
+        height:100vh;
+        position: relative;
+        & > .aboutme_list{
+            width:80%;
+            height:90%;
+            position: absolute;
+            @include absolute_posiotion(0,0,0,0);
+            margin:auto;
+            display: flex;
+            @include object-flex(row,nowrap,space-between,center);
+            & > .aboutme{
+                width:30%;
+                height:100%;
+                opacity: 0;
+                & > h1{
+                    font-size: 4vw;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 700;
+                }
+                & >img{
+                    width:100%;
+                    height:40%;
+                    object-fit: contain;
+                }
+                & > h2{
+                    padding-bottom:5%;
+                    font-size: 2vw;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 700;
+                }
+                & > div{
+                    font-size: 1.2vw;
+                    font-family: 'Noto Sans KR', sans-serif;
+                    font-weight: 500;
+                }
+            }
+            & > .aboutme_animation:nth-of-type(1){
+                animation:2s linear fadein;
+                animation-fill-mode: forwards;
+            }
+            & > .aboutme_animation:nth-of-type(2){
+                animation:2s linear fadein;
+                animation-delay: 2s;
+                animation-fill-mode: forwards;
+            }
+            & > .aboutme_animation:nth-of-type(3){
+                animation:2s linear fadein;
+                animation-delay: 4s;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+}
+/* 나에 대해 끝 */
+
+
+
+@media (min-width:360px) and (max-width:1000px){
+    main{
+        /* 프로필 시작 */
+        & > section:nth-of-type(1){
+            width:100vw;
+            height:200vh;
+            display: flex;
+            @include object-flex(column,nowrap,space-around,flex-start);
+            & > .profile_left{
+                width:100%;
+                height:50%;
+                top:0;
+                left:0;
+                position: relative;
+                & > .profile_picture{
+                    width:60%;
+                    height:30%;
+                }
+                & > .profile_text{
+                    @include absolute_posiotion("",0,10%,0);
+                    display: flex;
+                    @include object-flex(column,nowrap,space-around,center);
+                    width:90%;
+                    & > li{
+                        height:10%;
+                        width:100%;
+                        display: flex;
+                        @include object-flex(row,nowrap,flex-start,center);
+                        & > img {
+                            width:20%;
+                            height:100%;
+                            object-fit: contain;
+                        }
+                        & > p{
+                            font-size: 4vw;
+                        }
+                    }
+                }
+            }
+            & > .profile_right{
+                width:100%;
+                height:50%;
+                top:0;
+                left:0;
+                position: relative;
+                display: flex;
+                @include object-flex(column,nowrap,space-around,center);
+                & > ul{
+                    width:90%;
+                    height:25%;
+                    & > li{
+                        width:100%;
+                        font-size: 3vw;
+                        font-weight: 500;
+                        & > img{
+                            width:30%;
+                        }
+                        & > p{
+                            font-size: 5vw;
+                        }
+                    }
+                }
+            }
+        }
+        /* 프로필 끝 */
+        /* 스킬 시작 */
+        & > section:nth-of-type(2){
+            & > .skill_view{
+                & > .skill_list{
+                    height: 95%;
+                    & > li{
+                        width:30%;
+                        height:30%;
+                        & > p{
+                            width:85%;
+                            height:10%;
+                            font-size: 3vw;
+                        }
+                        & > div{
+                            & > p{
+                                font-size: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        /* 스킬 끝 */
+        & > section:nth-of-type(3){
+            height:200vh;
+            & > .aboutme_list{
+                height:90%;
+                @include object-flex(column,nowrap,space-between,center);
+                & > .aboutme{
+                    width:100%;
+                    height:30%;
+                    display: flex;
+                    @include object-flex(column,nowrap,space-between,center);
+                    & > h1{
+                        font-size: 5vw;
+                        text-align: center;
+                    }
+                    & > h2 {
+                        text-align: center;
+                        font-size: 4vw;
+                        padding-bottom: 0;
+                    }
+                    & > div{
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/* animation */
+@keyframes skill_ani1{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:90%;
+    }
+}
+@keyframes skill_ani2{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:80%;
+    }
+}
+@keyframes skill_ani3{
+    0%{
+        width:0%;
+    }
+    100%{
+        width:60%;
+    }
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        filter:blur(14px);
+    }
+    100%{
+        opacity: 1;
+        filter:blur(0px);
+    }
+ }
